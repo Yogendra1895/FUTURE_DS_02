@@ -55,6 +55,17 @@ Total Spend =
 High Value Customer =
     IF([Total Spend] > AVERAGE('marketing_data'[Total Spend]), "Yes", "No")
 
-## 🔍 Report Snippet 
-![snippet](https://github.com/user-attachments/assets/27fee6f6-ed19-4eb4-9556-96414d576c2d)
+Age = YEAR(TODAY()) - 'marketing_data'[Year_Birth]
 
+Total Spend =
+    'marketing_data'[MntWines] +
+    'marketing_data'[MntFruits] +
+    'marketing_data'[MntMeatProducts] +
+    'marketing_data'[MntFishProducts] +
+    'marketing_data'[MntSweetProducts] +
+    'marketing_data'[MntGoldProds]
+
+High Value Customer =
+    IF([Total Spend] > AVERAGE('marketing_data'[Total Spend]), "Yes", "No")
+
+![snippet](https://github.com/user-attachments/assets/2bb60cd1-b462-4e51-9ad2-3ee778898b77)
