@@ -56,4 +56,5 @@ High Value Customer =
     IF([Total Spend] > AVERAGE('marketing_data'[Total Spend]), "Yes", "No")
 
 ## 🔍 Report Snippet 
-  ![snippet](https://github.com/user-attachments/assets/e0e76cf9-4e2f-4dff-b6d0-4c844a5eefc0)
+![snippet](https://github.com/user-attachments/assets/27fee6f6-ed19-4eb4-9556-96414d576c2d)
+
